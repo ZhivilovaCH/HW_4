@@ -16,15 +16,15 @@ for i in range(n):
 print(list_1)
 
 temp = 0
-maximum = 0
+max_ = 0
 for i in range(len(list_1)):
     if i == len(list_1) - 1:
         temp = list_1[i-1] + list_1[i] + list_1[0]
     else:
         temp = list_1[i-1] + list_1[i] + list_1[i + 1]
-    if maximum < temp:
-        maximum = temp
+    if max_ < temp:
+        max_ = temp
 
-print(f'Итого ягод = {maximum}')
+print(f'Итого ягод = {max_}')
 
 
